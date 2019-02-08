@@ -1,4 +1,4 @@
-# LMGSI-03
+# LMSGI-03
 ## Tarea para LMSGI-03
 
 ### Creacion y Validacion de un Doccumento XML
