@@ -1,0 +1,36 @@
+
+
+<!ELEMENT coches  ( marca+ )>
+
+
+
+
+<!ATTLIST marca
+ nombre CDATA #REQUIRED
+>
+
+
+
+
+
+<!ELEMENT marca  ( modelo)*>
+
+<!ELEMENT modelo  (nombre , velocidad* , cilindrada* , potencia* , consumo* , co2* , combustible )>
+
+<!ATTLIST modelo
+ nombre CDATA #REQUIRED
+>
+
+<!ELEMENT nombre  ( #PCDATA )>
+
+<!ELEMENT velocidad  ( #PCDATA )>
+
+<!ELEMENT cilindrada  ( #PCDATA )>
+
+<!ELEMENT potencia  ( #PCDATA )>
+
+<!ELEMENT consumo  ( #PCDATA )>
+
+<!ELEMENT co2  ( #PCDATA )>
+
+<!ELEMENT combustible  ( #PCDATA )>
