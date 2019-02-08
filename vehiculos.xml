@@ -5,7 +5,8 @@
 <!--Enlace al documento DTD-->
 
 <!DOCTYPE coches SYSTEM "vehiculos.dtd">
-<coches xsi:noNamespaceSchemaLocation="vehiculos.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<coches xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="vehiculos.xsd">
 	<marca nombre="Alfa-romeo">
 		<modelo nombre="C4">
 			<nombre>Alfa Romeo C4 Spider 2014
@@ -24,8 +25,7 @@
 		<modelo nombre="Stelvio">
 			<nombre>Alfa Romeo Stelvio Quadrifoglio Verde 2017 2.9 V6 BiTurbo 510CV Q4 Automático
 			</nombre>
-			<velocidad>283
- km/h
+			<velocidad>283 km/h
 			</velocidad>
 			<cilindrada>2.891 cc
 			</cilindrada>
@@ -220,7 +220,7 @@
 			</consumo>
 			<co2>125
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Volt">
@@ -271,7 +271,7 @@
 			<co2>
 000
 			</co2>
-			<combustible>Eléctrico
+			<combustible>Electrico
 			</combustible>
 		</modelo>
 		<modelo nombre="Spacetourer">
@@ -287,7 +287,7 @@
 			</consumo>
 			<co2>155
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="C-Zero">
@@ -304,7 +304,7 @@
 			<co2>
 000
 			</co2>
-			<combustible>Eléctrico
+			<combustible>Electrico
 			</combustible>
 		</modelo>
 	</marca>
@@ -420,7 +420,7 @@
 			</consumo>
 			<co2>234
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>
@@ -470,7 +470,7 @@
 			</consumo>
 			<co2>228
 			</co2>
-			<combustible>Gasolina-Eléctrico
+			<combustible>Gasolina-Electrico
 			</combustible>
 		</modelo>
 	</marca>
@@ -586,7 +586,7 @@
 			</consumo>
 			<co2>154
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>
@@ -604,7 +604,7 @@
 			</consumo>
 			<co2>148
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Grand-Cherokee">
@@ -720,7 +720,7 @@
 			</consumo>
 			<co2>95
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>
@@ -804,7 +804,7 @@
 			</consumo>
 			<co2>189
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Quattroporte">
@@ -854,7 +854,7 @@
 			</consumo>
 			<co2>152
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
         <modelo nombre="MX-5">
@@ -888,7 +888,7 @@
 			</consumo>
 			<co2>237
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="CLS">
@@ -904,7 +904,7 @@
 			</consumo>
 			<co2>156
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="GLS">
@@ -1002,7 +1002,7 @@
 			</consumo>
 			<co2>148
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>
@@ -1020,7 +1020,7 @@
 			</consumo>
 			<co2>128
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Insignia">
@@ -1052,7 +1052,7 @@
 			</consumo>
 			<co2>146
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>
@@ -1070,7 +1070,7 @@
 			</consumo>
 			<co2>119
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="iOn">
@@ -1087,7 +1087,7 @@
 			<co2>
 000
 			</co2>
-			<combustible>Eléctrico
+			<combustible>Electrico
 			</combustible>
 		</modelo>
 		<modelo nombre="Rifter">
@@ -1103,7 +1103,7 @@
 			</consumo>
 			<co2>119
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>
@@ -1187,7 +1187,7 @@
 			</consumo>
 			<co2>120
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Talisman">
@@ -1203,7 +1203,7 @@
 			</consumo>
 			<co2>116
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Zoe">
@@ -1221,7 +1221,7 @@
 			<co2>
 000
 			</co2>
-			<combustible>Eléctrico
+			<combustible>Electrico
 			</combustible>
 		</modelo>
 	</marca>
@@ -1239,7 +1239,7 @@
 			</consumo>
 			<co2>139
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Arona">
@@ -1255,7 +1255,7 @@
 			</consumo>
 			<co2>106
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Tarraco">
@@ -1271,7 +1271,7 @@
 			</consumo>
 			<co2>147
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>
@@ -1289,7 +1289,7 @@
 			</consumo>
 			<co2>131
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Spaceback">
@@ -1321,7 +1321,7 @@
 			</consumo>
 			<co2>115
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>
@@ -1390,7 +1390,7 @@
 			<co2>
 000
 			</co2>
-			<combustible>Eléctrico
+			<combustible>Electrico
 			</combustible>
 		</modelo>
 		<modelo nombre="Model-X">
@@ -1407,7 +1407,7 @@
 			<co2>
 000
 			</co2>
-			<combustible>Eléctrico
+			<combustible>Electrico
 			</combustible>
 		</modelo>
 	</marca>
@@ -1441,7 +1441,7 @@
 			</consumo>
 			<co2>194
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Verso">
@@ -1457,7 +1457,7 @@
 			</consumo>
 			<co2>169
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>
@@ -1475,7 +1475,7 @@
 			</consumo>
 			<co2>135
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Passat">
@@ -1491,7 +1491,7 @@
 			</consumo>
 			<co2>39
 			</co2>
-			<combustible>Gasolina-Eléctrico
+			<combustible>Gasolina-Electrico
 			</combustible>
 		</modelo>
 		<modelo nombre="Sharan">
@@ -1507,7 +1507,7 @@
 			</consumo>
 			<co2>154
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="Tuareg">
@@ -1523,7 +1523,7 @@
 			</consumo>
 			<co2>182
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>
@@ -1541,7 +1541,7 @@
 			</consumo>
 			<co2>127
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="V90">
@@ -1557,7 +1557,7 @@
 			</consumo>
 			<co2>117
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 		<modelo nombre="XC90">
@@ -1589,7 +1589,7 @@
 			</consumo>
 			<co2>135
 			</co2>
-			<combustible>Diésel
+			<combustible>Diesel
 			</combustible>
 		</modelo>
 	</marca>

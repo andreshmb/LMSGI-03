@@ -45,9 +45,9 @@
 		<xs:simpleType>
 			<xs:restriction base="xs:NMTOKEN">
 				<xs:enumeration value="Gasolina"/>
-				<xs:enumeration value="Diésel"/>
-				<xs:enumeration value="Eléctrico"/>
-				<xs:enumeration value="Gasolina-Eléctrico"/>
+				<xs:enumeration value="Diesel"/>
+				<xs:enumeration value="Electrico"/>
+				<xs:enumeration value="Gasolina-Electrico"/>
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
