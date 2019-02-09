@@ -1,0 +1,568 @@
+/*Ajustes generales para toda la página*/
+
+*{
+	margin:auto;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: sans-serif, monospace ;
+
+}
+
+/* hoja de estilos ejercicio 02 de LMSGI creacion de página HTML 5 */
+/* Cabecera de página*/
+
+.portada{
+	height:180px;
+	border-color:crimson;
+
+}
+
+.cabecera{
+	background-image:url(../img/cabecera/california-1.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin:auto;
+	height:180px;
+}
+
+.rotulo{
+	position:absolute;
+	color:#D6D1A1;
+	text-align:center;
+	font-size:25px;
+	top:65px;
+	width:250px;
+	height:44px;
+}
+
+#logo{
+	position:absolute;
+	width:1000px;
+	height:52px;
+	top:5px;
+	left:70px;
+
+}
+/*Animacion de la imagen del logo a lo largo del div logo*/
+.logo-car{
+	position:relative;
+	width:150px;
+	height:50px;
+	border-top-color: white ;
+	border-radius:10px 10px 10px 10px;
+    animation-name: fastcar;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes fastcar{
+    0% {left: 0px;}
+    100% {left:1000px}
+}
+
+/*Cuerpo del documento*/
+
+.index{
+	background-image: url(../img/cabecera/ruta-66-2.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin:auto;
+}
+
+/*Barra de navegacion*/
+
+.navegacion{
+    top: 54px;
+	width: auto;
+	height: 60px;
+    margin-left: 260px;
+    position: fixed;
+}
+.navegacion ul{
+	list-style: none;
+	text-decoration: none;
+}
+
+/*Menú principal*/
+.menu{
+    background: #8EACB6;
+    border-radius: 10px;
+}
+.menu >li{
+   display: inline-block;
+
+}
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	font-family: monospace;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bolder;
+    color: #3B3833;
+}
+.menu > li > a:hover{
+	color: #C5D3A7;
+	transition: all 0.3s;
+}
+/*submenu*/
+.submenu{
+	position: absolute;
+	width: 160px;
+	margin-left: 20px;
+	visibility: hidden;
+    background: #8EACB6;
+    border-radius: 10px;
+}
+.submenu li a{
+	display: block;
+	padding: 10px 10px;
+	color: #3B3833;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+	text-decoration: none;
+}
+.submenu li a:hover{
+    color: #C5D3A7;
+    transition: all 0.3s;
+}
+.menu li:hover .submenu{
+  visibility: visible;
+}
+/*seccion principal la cual contiene todo el contenido*/
+.principal{
+    margin: 0px;
+    padding: 0px;
+}
+/*seccion central articulos pagina*/
+.contenido{
+	background-color: #C5CCB6;
+	width:75%;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+	padding: 20px 0px 20px 20px;
+}
+/*seccion lateral notas y enlaces sobre el contenido principal articulos*/
+#lateral{
+    background-color: #F5DEBE;
+    width: 19%;
+    height: auto;
+    float: left;
+    margin-left: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+#lateral p{
+    margin: 10px;
+}
+#lateral ul li::before{
+  content: "@";
+  color:#000;
+}
+h4{
+    text-align: center;
+    padding: 20px 10px;
+    letter-spacing: 2px;
+}
+h5{
+    text-shadow: 1px 0px;
+    margin-top: 10px;
+}
+#lateral hr{
+    margin: 0px 10px 10px;
+}
+blockquote{
+  
+    background: #D0A674;
+    border-left: 3px solid #47484B;
+}
+#lateral ul li{
+    list-style: none;
+}
+#lateral ul li a{
+    text-decoration: none;
+}
+#lateral ul li a:hover{
+    color: #000;
+}
+/*Pie de página informacion personal, etc.*/
+.pie{
+    background-color: #47484B;
+    height: 210px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    color: #FFF;
+}
+.goto >p{
+   margin-top: 0px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.goto >p >a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: monospace;
+}
+.how{
+    float: left;
+    width: 33%;
+}
+
+.contac{
+    float: left;
+    width: 33%;
+}
+.link{
+    float: left;
+    width: 33%;
+}
+h6{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: 20px;
+}
+.contpie p{
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.contpie p a{
+    text-decoration: none;
+    color: #fff;
+}
+.contpie p a::before{
+    content: "@"
+}
+.end p{
+   margin-top: 50px; 
+    margin-left: 92%;
+}
+.end p::before{
+    content: "@";
+}
+::before{
+    margin-left: 5px;
+}
+/*Articulo Todoterrenos*/
+/*imagen*/
+.todocamino{
+	width:200px;
+	height:150px;
+	float:right;
+	margin-right:10px;
+    padding: 10px 10px 10px 20px;
+}
+/*cabecera articulo todoterrenos*/
+#todoterreno{
+	text-align:center;
+	font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+
+/*Articulo Q7*/
+/*imagen*/
+.Q7{
+	width:400px;
+	height:350px;
+	float:right;
+    margin-top: 35px;
+	margin-right:10px;
+    padding: 55px 10px 10px 20px;
+}
+#q7{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Jeep Commander*/
+/*imagen*/
+.commander{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#jeep{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Furgonetas*/
+/*imagen*/
+.furgoneta{
+	width:200px;
+	height:150px;
+	float:right;
+	margin-right:10px;
+    padding: 10px 10px 10px 20px;
+}
+/*cabecera articulo Furgonetas*/
+#furgoneta{
+	text-align:center;
+	font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Volkswagen Caravelle*/
+.caravelle{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#volkswagen{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Nissan Primastar*/
+.primastar{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#Nissan{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Monovolumenes*/
+/*imagen*/
+.monovolumenes{
+	width:200px;
+	height:150px;
+	float:right;
+	margin-right:10px;
+    padding: 10px 10px 10px 20px;
+}
+/*cabecera articulo Monovolumenes*/
+#monovolumen{
+	text-align:center;
+	font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Chrysler Voyager*/
+.voyager{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#chrysler{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Renault Espace*/
+.space{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#renault{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Coches de Lujo*/
+/*imagen*/
+.lujoso{
+	width:200px;
+	height:150px;
+	float:right;
+	margin-right:10px;
+    padding: 10px 10px 10px 20px;
+}
+/*cabecera articulo coches de lujo*/
+#lujo{
+	text-align:center;
+	font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Ferrari 612 Scaglietti*/
+.scaglietti{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#ferrari{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Infinity G37*/
+.g37{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#infinity{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Maserati Quattroporte*/
+.quattroporte{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#maserati{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Deportivos*/
+/*imagen*/
+.bolido{
+	width:200px;
+	height:150px;
+	float:right;
+	margin-right:10px;
+    padding: 10px 10px 10px 20px;
+}
+/*cabecera articulo coches de lujo*/
+#deportivo{
+	text-align:center;
+	font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Audi R8*/
+.r8{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#audi{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Corvette Z06*/
+.z06{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#corvette{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+/*Articulo Porsche Caiman*/
+.caiman{
+	width:400px;
+	height:350px;
+	float:right;
+	margin-right:10px;
+    margin-top: 35px;
+    padding: 55px 10px 10px 20px;
+}
+#porsche{
+    text-align: center;
+    font-size:30px;
+    color:#3B3833;
+    padding: 9px 0px 20px 0px;
+}
+
+/*Tablas stilos*/
+figcaption{
+    text-align: center;
+    padding: 5px 5px;
+}
+table{
+    border-collapse: collapse;
+    
+}
+td, th {
+  border: 1px solid #47484B;
+  text-align: left;
+  padding: 8px;
+}
+
+/*Estilos de Parrafos en Main*/
+p{
+    margin-left: 6%;
+    margin-right: 20px;
+    margin-top: 55px;
+}
+br{
+    padding: 10px;
+}
+/*Separador articulos*/
+hr{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/*Diseño responsivo*/
+
+@media only screen and (max-width:800px) {
+  /* Para Tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* Para Smartphones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
